@@ -1,0 +1,325 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Julius Sans One', georgia, sans-serif;
+	font-size: 100%;
+	line-height: 26px;
+	background: url(../img/bg_stars.jpg);
+	background-size: 60%;
+}
+
+p {
+	font-family: georgia, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	color: ghostwhite;
+}
+
+h1 {
+	font-family:georgia,'Julius Sans One';
+	position: absolute;
+	color: ghostwhite;
+	background: rgb(20,74,125,0.6);
+	font-size: 100%;
+	line-height: 2em;
+	top: 4em;
+	left: -3em;
+	width: auto;
+	margin: 0;
+	padding: 1em;
+	transform: rotate(-90deg);
+	box-sizing: border-box;
+}
+
+h2 {
+	font-family: sans-serif;
+	position: relative;
+	background: rgba(13,44,64,0.8) url(../img/Mandarin.png) no-repeat left bottom;
+	background-size: 101%;
+	float: right;
+	color: #ffffff;
+	font-size: 250%;
+	line-height: 1.25em;
+	width: 50%;
+	height: 20em;
+	margin: 0;
+	padding: 6em 0.5em 0 0.5em;
+	box-sizing: border-box;
+}
+
+h3 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.5em;
+	font-style: normal;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	color: ghostwhite;
+	text-transform: uppercase;
+}
+
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #9685BA;
+}
+
+a:visited {
+	color: #9685BA;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #AAFFFF;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #ADD8E6;
+}
+
+ .page-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 120em;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.intro {
+	overflow: hidden;
+}
+
+.intro header {
+	position: relative;
+	background: transparent;
+	overflow: hidden;
+	width: 40%;
+	height: 50em;
+	float: left;
+}
+
+.intro .summary {
+	font-size: 100%;
+	width: 60%;
+	float: left;
+	background: transparent;
+	height: 50em;
+	margin: 0;
+	padding: 16.3em 2em 10em 2em;
+	box-sizing: border-box;
+}
+
+.intro .summary p {
+	padding: 0 40% 2em 0;
+	margin: 0;
+}
+
+.intro .preamble {
+	position: relative;
+	float: left;
+	width: 60.1%;
+	margin: 0 0 0 20%;
+	padding: 8em 0.5em 32em 0;
+	box-sizing: border-box;
+}
+
+.intro .preamble h3 {
+	font-size: 150%;
+	margin-right: 35%;
+}
+
+.intro .preamble p {
+	margin-right: 35%;
+}
+
+.intro .preamble p:last-child {
+	position: absolute;
+	z-index: 2;
+	background: rgba(0, 188, 217, 0.7);
+	width: 33.650%;
+	top: 0;
+	right: 0;
+	margin-right: 0;
+	padding: 10em 1em 20em 1em;
+	box-sizing: border-box;
+}
+
+/* 
+==========================================================================
+Main
+==========================================================================
+*/
+
+.main {
+	background: url(../img/Astronaut.png) no-repeat center center;
+	background-size: cover;
+	z-index: 1;
+	top: -25em;
+	margin-bottom: 1em;
+	padding: 10em 0;
+	position: relative;
+}
+
+.main footer {
+	display: block;
+	position: absolute;
+	left: 1em;
+	bottom: 1em;
+	width: 20%;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main footer a {
+	margin: 0 0.25em;
+	display: block;
+}
+
+.main .explanation {
+	background: rgba(13,44,64,0.8);
+	position: relative;
+	width: 40%;
+	margin: 0;
+	padding: 2em 1em;
+	box-sizing: border-box;
+}
+
+.main .explanation h3 {
+	position: absolute;
+	font-size: 150%;
+	line-height: 2em;
+	top: 6em;
+	left: -4.5em;
+	margin: 0;
+	box-sizing: border-box;
+	transform: rotate(-90deg);
+}
+
+.main .explanation p {
+	width: 60%;
+	padding-left: 15%;
+}
+
+.main .participation {
+	position: absolute;
+	right: 40%;
+	z-index: 2;
+	margin-top: 14em;
+	width: 40%;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+.main .participation h3 {
+	font-size: 150%;
+}
+
+.main .benefits {
+	background: rgba(13,44,64,0.8) url(../img/Earth.png) no-repeat left top;
+	background-size: 100%;
+	position: absolute;
+	right: 20%;
+	z-index: 2;
+	margin-top: 8em;
+	margin-left: 0;
+	width: 20%;
+	padding: 22em 1em 25em 1em;
+	box-sizing: border-box;
+}
+
+.main .benefits h3 {
+	font-size: 150%;
+}
+
+.main .requirements {
+	position: absolute;
+	column-count: 2;
+	column-gap: 2em;
+	right: 0;
+	z-index: 2;
+	margin: 60em 0 0 0;
+	width: 60%;
+	padding: 1em 0 0 0;
+	box-sizing: border-box;
+}
+
+.main .requirements h3 {
+	position: absolute;
+	z-index: 3;
+	font-size: 150%;
+	line-height: 2em;
+	top: 0em;
+	left: -6em;
+	margin: 0;
+	padding: 1em;
+	box-sizing: border-box;
+	transform: rotate(-90deg);
+}
+
+.main .requirements p {
+	margin: 0 1em 1em 1em;
+}
+
+.main .requirements::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -60%;
+	background: url(../img/SkyTown.jpg) no-repeat left center;
+	background-size: cover;
+	z-index: 2;
+	width: 60%;
+	height: 45em;
+	margin-top: 0;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+/* 
+==========================================================================
+Sidebar
+==========================================================================
+*/
+
+
+.sidebar {
+	margin-top: 65em;
+	padding: 11em 4em 5em 10em;
+	background: rgb(25,37,61,0.5);
+	overflow: hidden;
+	box-sizing: border-box;
+	z-index: 2;
+	column-count: 3;
+	column-gap: 2em;
+}
+
+.sidebar ul {
+	margin: 2em 0 0 0 ;
+	padding: 0;
+}
+
+.sidebar li {
+	line-height: 2em;
+	display: block;
+	color:#D4CDDC;
+}
+
+.sidebar li a:link {
+	color: snow;
+}
+
+.sidebar li a:visited {
+	color: #ADD8E6;
+}
+
+.sidebar li a:hover {
+	color: #AAFFFF;
+	text-decoration: none;
+	font-style: italic;
+}

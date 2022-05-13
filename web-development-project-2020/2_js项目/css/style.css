@@ -1,0 +1,360 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(../img/bg_stars.jpg);
+	background-repeat: repeat;
+	background-size: 60%;
+	font-size: 80%;
+	line-height: 2em;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	margin: 0;
+	text-align: justify;
+	color: white;
+	font-family: 'Julius Sans One', georgia, sans-serif;
+}
+
+h1 {
+	font-size: 4.2em;
+	font-style: normal;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-weight: normal;
+	margin: 2em 0 0 0;
+	color: ghostwhite;
+}
+
+h2 {
+	padding-top: 5px;
+	padding-bottom: 30px;
+	border-top: none;
+	font-size: 1.6em;
+	font-style: italic;
+	font-family: 'Julius Sans One', georgia, sans-serif;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	margin: 2em 0 0 0;
+	color: ghostwhite;
+}
+
+h3 {
+	font-size: 2.2em;
+	font-style: normal;
+	font-family: 'Julius Sans One', sans-serif;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	color: ghostwhite;
+	text-transform: uppercase;
+}
+
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #C4C0FF;
+}
+
+a:visited {
+	color: #9685BA;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #AAFFFF;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #ADD8E6;
+}
+
+
+/* specific divs */
+
+.page-wrapper {
+	position: relative;
+}
+
+header {
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+	z-index: 3;
+}
+
+header div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	--offset: 0px;
+	--blur: 2px;
+}
+
+header div img {
+	display: block;
+	width: 110%;
+	height: 100%;
+	object-fit: cover;
+
+	transform: translatex(var(--offset));
+	filter: blur(var(--blur));
+}
+
+.content-nav {
+	position: relative;
+	background-color: rgb(76,74,72,0.6);
+	margin: 9px;
+	display: block;
+	overflow: hidden;
+	bottom: 700px;
+	z-index: 3;
+}
+
+.content-nav ul {
+	height: 1em;
+	padding: 1px;
+	font-size: small;
+	font-family: 'Julius Sans One', georgia, sans-serif;
+}
+
+.content-nav ul li {
+	list-style-type: none;
+	float: left;
+	height: 1em;
+	width: 20%;
+	text-align: center;
+}
+
+.content-nav ul li a:link{
+	color: #FFFFFF;
+}
+
+.content-nav ul li a:hover{
+	color: #ADD8E6;
+	text-decoration: none;
+}
+
+.extra {
+	width: 100%;
+	text-align: center;
+}
+
+#author {
+	position: relative;
+	top: 30px;
+	color: ghostwhite;
+	font-size: 1.8em;
+	font-family: 'Julius Sans One', georgia, sans-serif;
+}
+
+.banner {
+	clear: both;
+	position: relative;
+	bottom: 660px;
+	text-align: center;
+	font-family: 'Julius Sans One', georgia, sans-serif;
+}
+
+.banner h1{
+	text-transform: uppercase;
+}
+
+.summary {
+	clear: both;
+	position: relative;
+	bottom: 135px;
+}
+
+.summary p {
+	font: italic 1.1em/2.2 georgia;
+	text-align: center;
+}
+
+.preamble {
+	position: relative;
+	bottom: 30px;
+	margin:0 90px 90px 90px;
+}
+
+.preamble_in{
+	background-color: rgb(19,29,54,0.5);
+	padding: 2em;
+}
+
+.preamble p {
+	font: 1.1em/2.2 georgia;
+	font-size: medium;
+}
+
+/* 
+==========================================================================
+Supporting
+==========================================================================
+*/
+
+.supporting {
+	float: left;
+	width: 60%;
+	position: relative;
+	bottom: 50px;
+	margin: 0 0 0 90px;
+}
+
+.supporting p {
+	font: 1.1em/2.2 georgia;
+	font-size: medium;
+}
+
+.explanation{
+	float: right;
+}
+
+.explanation_in{
+	background-color: rgb(25,37,61,0.5);
+	padding: 2em;
+}
+
+.participation{
+	position: relative;
+	float: right;
+}
+
+.participation_in{
+	background-color: rgb(20,74,125,0.5);
+	padding: 2em;
+}
+
+.benefits{
+	position: relative;
+	float: right;
+}
+
+.benefits_in{
+	background-color: rgb(25,37,61,0.5);
+	padding: 2em;
+}
+
+.requirements{
+	position: relative;
+	float: right;
+}
+
+.requirements_in{
+	background-color: rgb(20,74,125,0.5);
+	padding: 2em;
+}
+
+/* 
+==========================================================================
+Footer
+==========================================================================
+*/
+
+footer {
+	clear: both;
+	padding: 3em 0 0 0;
+	color: #fff;
+	background: rgb(25,37,61,0.5);
+	text-align: center;
+}
+
+footer a {
+	display: inline-block;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	padding: 40px 0 0 0;
+	margin: 0 0.5em;
+	position: relative;
+}
+
+footer a:link {
+	color: #FFFAFA;
+}
+
+footer a:visited {
+	color: #ADD8E6;
+}
+
+footer a:hover {
+	color:#9685BA;
+	text-decoration: none;
+}
+
+footer a::before {
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	overflow: visible;
+	font-size: 36px;
+}
+
+footer a.zen-validate-html::before {content: "1";}
+footer a.zen-validate-html:hover::before {content: "#";}
+footer a.zen-validate-css::before {content: "2";}
+footer a.zen-validate-css:hover::before {content: "A";}
+footer a.zen-license::before {content: "3";}
+footer a.zen-license:hover::before {content: "L";}
+footer a.zen-accessibility::before {content: "4";}
+footer a.zen-accessibility:hover::before {content: "E";}
+footer a.zen-github::before {content: "5";}
+footer a.zen-github:hover::before {content: "X";}
+
+/* 
+==========================================================================
+Sidebar
+==========================================================================
+*/
+
+.sidebar {
+	position: relative;
+	
+	padding:3em;
+	float: left;
+	width: 25%;
+	background: transparent;
+	font-size: 1.1em;
+	line-height: 5em;
+	font-family: 'Julius Sans One', georgia, sans-serif;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar li {
+	line-height: 2em;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	color:#D4CDDC;
+}
+
+.sidebar li a:link {
+	color: snow;
+}
+
+.sidebar li a:visited {
+	color: #ADD8E6;
+}
+
+.sidebar li a:hover {
+	color: #AAFFFF;
+	text-decoration: none;
+	font-style: italic;
+}
